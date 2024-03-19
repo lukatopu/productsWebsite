@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+#productsContainer{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    padding: 0px 50px;
+    z-index: 1;
+}
+
+#searchDiv{
+    width: 35%;
+    position: relative;
+}
+
+#searchDiv > i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgb(173 164 218);
+}
+
+#searchDiv input{
+    width: 100%;
+    background-color:rgb(221 217 242);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 7px;
+    outline: none;
+}
+
+#userAndDarkMode{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#darkModeContainer{
+    text-align: center;
+}
+
+#darkModeIcon{
+    font-size: 18px;
+}
+
+#darkModeText{
+    font-size: 12px;
+}
+
+#userDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#logoutButton{
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#logoutButton:hover{
+    text-decoration: underline;
+}
+
+.productsList {
+    margin-top: 70px;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2%;
+}
+
+.productsList .product {
+    width: 32%;
+    height: 300px;
+    background-color: rgb(246 245 251);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.productsList .product > .productImage {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.productsList .product > .productDescription {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+    color: rgb(97, 69, 236);
+    font-weight: bold;
+}
+
+.productsList .product .star {
+    font-size: 12px;
+    color: rgb(153 153 153);
+}
+
+.productsList .product .star.active {
+    color: rgb(238 198 77);
+}
+
+.productsList .product .saleImage {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 40px;
+    display: none;
+}
+.productsList .product .saleImage.visible {
+    display: unset;
+}
+
+.productsList .product .productPrice.hasSale {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.productsList .product .newPrice {
+    display: none;
+}
+.productsList .product .newPrice.visible {
+    display: unset;
+}
+
+.productsList .product .priceContainer {
+    display: flex;
+    gap: 5px;
+}
+
+
+#darkMode{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-toggle-on{
+    color: white;
+}
+
+.darkMode{
+    background-color: #333;
+    color: #fff;
+}
+
+.headerDarkMode{
+    background-color: rgb(33, 33, 33);
+}
+
+#scrollToTopButton{
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #dd3333;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+#scrollToTopButton:hover{
+    opacity: 0.8;
+}
+
+.productsList.hidden {
+    display: none;
+}

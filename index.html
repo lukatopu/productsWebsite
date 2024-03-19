@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+    <div id="authContainer">
+        <div class="authBox">
+            <h3>Login Page</h3>
+            <form action="">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="john.doe@gmail.com" id="username">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="●●●●●●●●" id="password">
+                </div>
+                <button type="submit" id="submitButton">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="productsContainer">
+        <header>
+            <div id="searchDiv">
+                <input type="text" placeholder="Search product..." id="searchInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
+            <div id="userAndDarkMode">
+                <div id="darkModeContainer">
+                    <button id="darkMode"><i id="darkModeIcon" class="fa-solid fa-toggle-off"></i></button>
+                    <p id="darkModeText">Light Mode</p>
+                </div>
+    
+                <div id="userDiv">
+                    <img src="./assets/profilePic.png" alt="">
+                    <div>
+                        <p id="user"></p>
+                        <button id="logoutButton">Log out</button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="productsList">
+        </main>
+
+        <main class="singleProduct">
+
+            <button class="backButton hidden"><i class="fa-solid fa-arrow-left"></i></button>
+
+  
+            <div class="imgContainer">
+                <div class="otherImgContainer">
+                    <img class="otherImg oth1" src="" alt="">
+                    <img class="otherImg oth2" src="" alt="">  
+                    <img class="otherImg oth3" src="" alt=""> 
+                </div>
+
+                <div class="mainPicContainer">
+            <img class="mainPic" src="" alt="">
+                </div>
+            </div>
+
+            <div class="allPrdouctInfo">
+            <h1 class="itemName"></h1>
+            <p class="stock"></p>
+            <h2 class="itemPrice"></h2>
+            <h5>Product description </h5>
+            <p class="productInfo"></p>
+                
+            <div class="productAddButtons">
+                <button class="addQty"><p class="minusButton">-</p><p class="qtyNumber">1</p><p class="plusButton">+</p></button>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            
+        </div>
+     
+            
+        </main>
+
+        <button id="scrollToTopButton"><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+    
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/products.js"></script>
+    <script type="module" src="./js/product.js"></script>
+</body>
+</html>

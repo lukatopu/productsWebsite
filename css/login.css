@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(244 245 242);
+}
+
+.authBox {
+    background-color: white;
+    padding: 14px 20px;
+    box-shadow: 0px 5px 5px rgb(224 224 222);
+    border-radius: 5px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.authBox > h3 {
+    text-align: center;
+}
+
+.authBox > form input, .authBox > form label, .authBox > form button {
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.authBox > form input {
+    border-radius: 4px;
+    border: 2px solid rgb(236 238 240);;
+}
+.authBox > form button {
+    background-color: rgb(28 79 216);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+
+#authContainer, #productsContainer {
+    display: none;
+}
